@@ -34,6 +34,7 @@ public class P23_WindowHandling {
 
         for (String eachWindow : allWindows) {
             Driver.getDriver().switchTo().window(eachWindow);
+            System.out.println(Driver.getDriver().getWindowHandle());
             System.out.println("driver.getTitle() = " + Driver.getDriver().getTitle());
         }
 
